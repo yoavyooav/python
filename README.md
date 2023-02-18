@@ -1328,11 +1328,9 @@ print(emp.getName(), emp.isEmployee())
 emp = Employee("Geek2")  # An Object of Employee
 print(emp.getName(), emp.isEmployee())
 
-/* 
-output: 
+""" output: 
 Geek1 False
-Geek2 True
-*/
+Geek2 True """
 ```
 
 **Subclassing (Calling constructor of parent class)**
@@ -1410,11 +1408,11 @@ class Derived(Base1, Base2):
 ob = Derived()
 ob.printStrs()
 
-/* output
+""" output
 Base1
 Base2
 Derived
-Geek1 Geek2 */
+Geek1 Geek2 """
 ```
 
 * Multilevel inheritance: When we have a child and grandchild relationship. 
@@ -1493,10 +1491,10 @@ object1 = D()
 # produces an error as d is private instance variable
 print(object1.d)
 
-/* output
+""" output
   File "/home/993bb61c3e76cda5bb67bd9ea05956a1.py", line 16, in 
     print (object1.d)                     
-AttributeError: type object 'D' has no attribute 'd' */
+AttributeError: type object 'D' has no attribute 'd' """
 ```
 
 Since ‘d’ is made private by those underscores, it is not available to the child class ‘D’ and hence the error.
@@ -1561,13 +1559,13 @@ for country in (obj_ind, obj_usa):
     country.language()
     country.type()
     
-/* output 
+""" output 
 New Delhi is the capital of India.
 Hindi is the most widely spoken language of India.
 India is a developing country.
 Washington, D.C. is the capital of USA.
 English is the primary language of USA.
-USA is a developed country. */
+USA is a developed country. """
 ```
 **Polymorphism with Inheritance: **
 
@@ -1602,13 +1600,13 @@ obj_spr.flight()
 obj_ost.intro()
 obj_ost.flight()
 
-/* output
+""" output
 There are many types of birds.
 Most of the birds can fly but some cannot.
 There are many types of birds.
 Sparrows can fly.
 There are many types of birds.
-Ostriches cannot fly. */
+Ostriches cannot fly. """
 ```
 
 Polymorphism with a Function and objects: 
@@ -1664,7 +1662,7 @@ CSStudent.stream = 'mech'
   
 print(a.stream) # prints 'ece'
 print(b.stream) # prints 'mech'
-/* output
+""" output
 cse
 cse
 Geek
@@ -1675,7 +1673,7 @@ cse
 ece
 cse
 ece
-mech */ 
+mech """
 ```
 
 ### Class method vs Static method
@@ -1746,12 +1744,12 @@ Remember, since this returns an iterator, we can convert it to a list or iterate
 ```py
 for x in my_range(5):
     print(x)
-/* outputs:
+""" outputs:
 0
 1
 2
 3
-4 */
+4 """
 ```
 
 **Generators** are a lazy way to build iterables. They are useful when the fully realized list would not fit in memory, or when the cost to calculate each list element is high and you want to do it as late as possible. But they can only be iterated over once.
