@@ -1328,11 +1328,9 @@ print(emp.getName(), emp.isEmployee())
 emp = Employee("Geek2")  # An Object of Employee
 print(emp.getName(), emp.isEmployee())
 
-""" 
-output
+""" output
 Geek1 False
-Geek2 True
-"""
+Geek2 True """
 ```
 
 **Subclassing (Calling constructor of parent class)**
