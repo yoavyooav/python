@@ -1270,8 +1270,8 @@ The **__del__()** method is a known as a destructor method in Python. It is call
 Syntax of destructor declaration : 
 
 ```py
-def __init__(self):
-    # body of the constructor
+def __del__(self):
+  # body of destructor
 ```
 
 Note : A reference to objects is also deleted when the object goes out of reference or when the program ends. 
